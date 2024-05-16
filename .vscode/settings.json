@@ -1,4 +1,16 @@
 {
     "lldb.library": "/usr/lib/liblldb.so",
-    "lldb.launch.expressions": "native"
+    "lldb.launch.expressions": "native",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Local",
+            "database": "grocery",
+            "username": "postgres",
+            "password": ""
+        }
+    ]
 }

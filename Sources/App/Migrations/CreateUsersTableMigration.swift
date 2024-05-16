@@ -5,7 +5,7 @@ struct CreateUsersTableMigration: AsyncMigration {
         try await database.schema("users")
             .id()
             .field("username", .string, .required).unique(on: "username")
-            .field("pasword", .string, .required)
+            .field("password", .string, .required)
             .create()
     }
 

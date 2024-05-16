@@ -30,9 +30,9 @@ final class AppTests: XCTestCase {
         try await self.app.test(.POST, "api/register", beforeRequest: { req in
             try req.content.encode(newDTO)
         }, afterResponse: { res async throws in
-            XCTAssertEqual(res.status, .ok)
+            XCTAssertEqual(res.status, .created)
             let models = try await User.query(on: self.app.db).all()
-            XCTAssertEqual(models.map { $0.toDTO().title }, [newDTO.title])
+            XCTAssertEqual(models.map { $0.toDTO().username }, [newDTO.username])
         })
     }
 }
