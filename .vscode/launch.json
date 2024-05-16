@@ -7,9 +7,9 @@
                 "swift"
             ],
             "args": [],
-            "cwd": "${workspaceFolder:SwiftRepo}",
+            "cwd": "${workspaceFolder:grocery-server-app}",
             "name": "Debug App",
-            "program": "${workspaceFolder:SwiftRepo}/.build/debug/App",
+            "program": "${workspaceFolder:grocery-server-app}/.build/debug/App",
             "preLaunchTask": "swift: Build Debug App"
         },
         {
@@ -19,9 +19,9 @@
                 "swift"
             ],
             "args": [],
-            "cwd": "${workspaceFolder:SwiftRepo}",
+            "cwd": "${workspaceFolder:grocery-server-app}",
             "name": "Release App",
-            "program": "${workspaceFolder:SwiftRepo}/.build/release/App",
+            "program": "${workspaceFolder:grocery-server-app}/.build/release/App",
             "preLaunchTask": "swift: Build Release App"
         }
     ]
